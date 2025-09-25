@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <div class="p-6 bg-white rounded-3xl shadow-2xl w-full max-w-xs mx-4 sm:mx-0">
+        <div id="display" class="bg-gray-900 text-white rounded-2xl p-6 mb-6 text-right text-4xl font-bold overflow-hidden whitespace-nowrap">0</div>
+        
+        <div class="grid calculator-grid gap-4">
+            <button class="calculator-button bg-gray-200 text-gray-700" onclick="handleButtonClick('C')">C</button>
+            <button class="calculator-button bg-orange-500 text-white" onclick="handleButtonClick('/')">/</button>
+            <button class="calculator-button bg-orange-500 text-white" onclick="handleButtonClick('*')">*</button>
+            <button class="calculator-button bg-orange-500 text-white" onclick="handleButtonClick('(')">(</button>
+            
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('7')">7</button>
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('8')">8</button>
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('9')">9</button>
+            <button class="calculator-button bg-orange-500 text-white" onclick="handleButtonClick(')')">)</button>
+
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('4')">4</button>
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('5')">5</button>
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('6')">6</button>
+            <button class="calculator-button bg-orange-500 text-white" onclick="handleButtonClick('-')">-</button>
+
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('1')">1</button>
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('2')">2</button>
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('3')">3</button>
+            <button class="calculator-button bg-orange-500 text-white" onclick="handleButtonClick('+')">+</button>
+
+            <button class="calculator-button bg-gray-800 text-white col-span-2" onclick="handleButtonClick('0')">0</button>
+            <button class="calculator-button bg-gray-800 text-white" onclick="handleButtonClick('.')">.</button>
+            <button class="calculator-button bg-green-500 text-white" onclick="handleButtonClick('=')">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
